@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Halaman Daftar</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <h1>Daftar member orion net</h1>
+      <form>
+        <label>Username</label>
+        <br />
+        <input type="text" />
+
+        <br />
+
+        <label>Email</label>
+        <br />
+        <input type="text" />
+        <button onclick="butact()">Get OTP</button>
+        <script>
+          function butact() {
+            alert("OTP telah dikirim ke email anda");
+          }
+        </script>
+        <br />
+        <br />
+        <label>Password</label>
+        <br />
+        <input type="password" />
+        <label>OTP</label>
+        <br />
+        <input
+          name="OTP"
+          oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+          type="text"
+          maxlength="5"
+        />
+        <button onclick="feedback()">Register</button>
+        <script>
+          function feedback() {
+            alert("Registrasi berhasil silahkan login ke akun anda");
+          }
+        </script>
+        <p>
+          Sudah punya akun?
+          <a href="index.html">Login di sini</a>
+        </p>
+      </form>
+    </div>
+  </body>
+</html>
